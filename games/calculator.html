@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/calculator.css" />
+  </head>
+  <body>
+    <div class="cream-rec box-style">
+      <a href="../index.html" class="back-home-btn">← Back to Home</a>
+      <div class="games-and-toolkit-container">
+        <h1 class="text-lg">Calculator</h1>
+        <h2 class="text-med">Made with 💌 by Navyaa</h2>
+      </div>
+    </div>
+
+    <div class="content box-style">
+      <div class="calculator box-style">
+        <div id="calculated" class="box-style">
+          <input class = "text-med" id="display" readonly />
+            <button class="box-style darkBtn text-med" onclick="clearDisplay()">C</button>
+          </div>
+          <div class="buttons box-style">
+            <!-- Row 1 -->
+            <button class="box-style text-med" onclick="appendToDisplay('7')">7</button>
+            <button class="box-style text-med" onclick="appendToDisplay('8')">8</button>
+            <button class="box-style text-med" onclick="appendToDisplay('9')">9</button>
+            <button class="box-style darkBtn text-med" onclick="appendToDisplay('/')">
+            /
+            </button>
+
+            <!-- Row 2 -->
+            <button class="box-style text-med" onclick="appendToDisplay('4')">4</button>
+            <button class="box-style text-med" onclick="appendToDisplay('5')">5</button>
+            <button class="box-style text-med" onclick="appendToDisplay('6')">6</button>
+            <button class="box-style darkBtn text-med" onclick="appendToDisplay('*')">
+            *
+            </button>
+
+            <!-- Row 3 -->
+            <button class="box-style text-med" onclick="appendToDisplay('1')">1</button>
+            <button class="box-style text-med" onclick="appendToDisplay('2')">2</button>
+            <button class="box-style text-med" onclick="appendToDisplay('3')">3</button>
+            <button class="box-style darkBtn text-med" onclick="appendToDisplay('-')">
+            -
+            </button>
+
+            <!-- Row 4 -->
+            <button class="box-style text-med" onclick="appendToDisplay('0')">0</button>
+            <button class="box-style text-med" onclick="appendToDisplay('.')">.</button>
+            <button class="box-style lightBtn text-med" onclick="calculate()">=</button>
+            <button class="box-style darkBtn text-med" onclick="appendToDisplay('+')">+</button>
+          </div>
+      </div>
+    </div>
+
+    <script src="js/calculator.js"></script>
+  </body>
+</html>

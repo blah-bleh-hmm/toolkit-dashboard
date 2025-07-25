@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("bgs/yellowBg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.cream-rec {
+  background-color: #ffeed4;
+  height: 287px;
+  width: 1287px;
+  margin: 50px auto 63px auto;
+  padding: 53px 0 76px 0;
+  color: #023048;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.back-home-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-family: "Pixelify Sans", cursive;
+  font-size: 24px;
+  color: #023048;
+  text-decoration: none;
+  background-color: #659aba;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 2px solid #023048;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.back-home-btn:hover {
+  background-color: #f4c95d;
+  color: #c1111e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  background-color: #ffeed4;
+  height: 551px;
+  width: 1308px;
+  margin: 50px auto 0 auto;
+  color: #f4c95d;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background: #c1111e;
+  width: 632px;
+  height: 449px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 36px 42px 36px 42px;
+}
+
+#calculated {
+  width: 584.889px;
+  height: 76px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 9px 27px 10px 27px;
+}
+
+#display {
+  background-color: #c1111e;
+  border: none;
+  width: 367px;
+  height: 56px;
+  text-align: left;
+  color: #f4c95d;
+}
+
+.buttons {
+  background-color: #f4c95d;
+  padding: 27.5px 27.5px 27.5px 27.5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+
+.buttons button {
+  margin: 6.88px 6.88px 6.88px 6.88px;
+}
+
+button {
+  width: 117.84px;
+  height: 56.09px;
+  background-color: #ffeed4;
+  color: #023048;
+}
+
+/* UTILITIES */
+
+.box-style {
+  border-radius: 12px;
+  border: 2px solid #000;
+}
+
+.darkBtn {
+  background-color: #023048;
+  color: #ffeed4;
+}
+
+.text-lg {
+  font-family: "Press Start 2P", cursive;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 90px;
+  text-align: center;
+}
+
+.text-lg-px {
+  font-family: "Pixelify Sans", cursive;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 90px;
+  text-align: center;
+}
+
+.text-med {
+  font-family: "Pixelify Sans", cursive;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 79.65%;
+  text-align: center;
+}

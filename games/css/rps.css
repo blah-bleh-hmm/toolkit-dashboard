@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("bgs/lightBlueBg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.cream-rec {
+  background-color: #ffeed4;
+  height: 287px;
+  width: 1287px;
+  margin: 50px auto 63px auto;
+  padding: 53px 0 76px 0;
+  color: #023048;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.back-home-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-family: "Pixelify Sans", cursive;
+  font-size: 24px;
+  color: #023048;
+  text-decoration: none;
+  background-color: #659aba;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 2px solid #023048;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.back-home-btn:hover {
+  background-color: #f4c95d;
+  color: #c1111e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  background-color: #ffeed4;
+  height: 551px;
+  width: 1308px;
+  margin: 60px auto 0 auto;
+  color: #023048;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 742px;
+  height: 551px;
+}
+
+.choice {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+}
+
+.choice:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.choice img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  max-width: 200px;
+  max-height: 200px;
+  transition: transform 0.3s ease;
+}
+
+.choice:hover img {
+  transform: scale(1.1);
+}
+
+#Rock {
+  background-color: #f4c95d;
+}
+#Paper {
+  background-color: #023048;
+}
+
+#Scissors {
+  background-color: #c1111e;
+}
+
+.upper-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50%;
+  flex-shrink: 0;
+}
+
+.lower-div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50%;
+  flex-shrink: 0;
+}
+
+#scores {
+  padding: 80px 74px 72px 74px;
+  width: 566px;
+  height: 551px;
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+#score-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 418px;
+  height: 140px;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+#result-text {
+  display: flex;
+  width: 418px;
+  height: 160px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #659aba;
+  text-transform: capitalize;
+}
+
+/* UTILITIES */
+
+.box-style {
+  border-radius: 12px;
+  border: 2px solid #000;
+}
+
+.text-lg {
+  font-family: "Press Start 2P", cursive;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 90px;
+  text-align: center;
+}
+
+.text-lg-px {
+  font-family: "Pixelify Sans", cursive;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 90px;
+  text-align: center;
+}
+
+.text-med {
+  font-family: "Pixelify Sans", cursive;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 79.65%;
+  text-align: center;
+}

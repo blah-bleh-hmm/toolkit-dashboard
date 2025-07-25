@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="css/rps.css" />
+  </head>
+  <body>
+    <div class="cream-rec box-style">
+      <a href="../index.html" class="back-home-btn">← Back to Home</a>
+      <div class="games-and-toolkit-container">
+        <h1 class="text-lg">Rock Paper Scissors Game</h1>
+        <h2 class="text-med">Made with 💌 by Navyaa</h2>
+      </div>
+    </div>
+
+    <div class="content box-style">
+      <div class="choices">
+        <div class="choices upper-div">
+          <div class="choice" id="Rock">
+            <img src="images/rps/rock.png" alt="" />
+          </div>
+          <div class="choice" id="Paper">
+            <img src="images/rps/paper.png" alt="" />
+          </div>
+        </div>
+        <div class="choices lower-div">
+          <div class="choice" id="Scissors">
+            <img src="images/rps/scissors.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div id="scores">
+        <div class="text-lg-px" id="score-section">
+          <div id="user-score">
+            <p class="score" id="user-score-value">0</p>
+            <p>You</p>
+          </div>
+          <div class="text-lg-px" id="comp-score">
+            <p class="score" id="comp-score-value">0</p>
+            <p>Comp</p>
+          </div>
+        </div>
+        <div id="result-text" class="text-med box-style">
+          <div id="win-lose-text">You Won!</div>
+          <div id="result-ans" class="text-med">Rock beats Scissors</div>
+        </div>
+      </div>
+    </div>
+    <script src="js/rps.js"></script>
+  </body>
+</html>

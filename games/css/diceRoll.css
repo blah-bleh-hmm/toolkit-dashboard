@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("bgs/yellowBg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.cream-rec {
+  background-color: #ffeed4;
+  height: 287px;
+  width: 1287px;
+  margin: 50px auto 63px auto;
+  padding: 53px 0 76px 0;
+  color: #023048;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.back-home-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-family: "Pixelify Sans", cursive;
+  font-size: 24px;
+  color: #023048;
+  text-decoration: none;
+  background-color: #659aba;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 2px solid #023048;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.back-home-btn:hover {
+  background-color: #f4c95d;
+  color: #c1111e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  background-color: #ffeed4;
+  height: 551px;
+  width: 1308px;
+  margin: 50px auto 0 auto;
+  color: #f4c95d;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+}
+
+#dice-roller {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 668px;
+  height: 551px;
+  padding: 57px 116px 58px 116px;
+}
+
+#dice-box {
+  width: 436px;
+  height: 436px;
+  background-color: #c1111e;
+  border-radius: 12px;
+  position: relative;
+  padding: 55px 55px 55px 55px;
+}
+/* DICE */
+.dice {
+  position: relative;
+  margin: 50px 0 0px 50px;
+  width: 225px;
+  height: 225px;
+  transform-style: preserve-3d;
+  transition: 1s ease;
+  background-color: #023048;
+}
+
+@keyframes rolling {
+  50% {
+    transform: rotateX(455deg) rotateY(455deg);
+  }
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #023048;
+  border-radius: 12px;
+  transform-style: preserve-3d;
+  border: 2px solid black;
+}
+
+.face::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  transform: translateZ(-1px);
+}
+.face::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 40.5px;
+  height: 40.5px;
+  border-radius: 50%;
+  background: #f4c95d;
+}
+/* dice faces */
+.front {
+  transform: translateZ(112.5px);
+}
+
+.back {
+  transform: rotateX(180deg) translateZ(112.5px);
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(112.5px);
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(112.5px);
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(112.5px);
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(112.5px);
+}
+
+.front::after {
+  width: 40.5px;
+  height: 40.5px;
+  background: #f4c95d;
+  margin: -20px 0 0 -17px;
+}
+
+.back::after {
+  margin: -70px 0 0 -63px;
+  box-shadow: 90px 0, 0 56px, 90px 56px, 0 112px, 90px 112px;
+}
+
+.top::after {
+  margin: -70px 0 0 -63px;
+  box-shadow: 90px 90px;
+}
+
+.bottom::after {
+  margin: -80px 0 0 -78px;
+  box-shadow: 58px 58px, 117px 117px, 117px 0, 0 117px;
+}
+
+.right::after {
+  margin: -65px 0 0 -63px;
+  box-shadow: 90px 0, 0 90px, 90px 90px;
+}
+
+.left::after {
+  margin: -75px 0 0 -70px;
+  box-shadow: 56px 56px, 112px 112px;
+}
+/* number section */
+
+#numberSection {
+  color: #023048;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 641px;
+  height: 551px;
+  padding: 48px 142px 48px 142px;
+}
+
+#theNumber {
+  font-family: "Press Start 2P", cursive;
+  font-weight: 400;
+  font-size: 200px;
+  line-height: 200px;
+  text-align: center;
+  background-color: #c1111e;
+  color: #f4c95d;
+  width: 237px;
+  height: 237px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#rollDice {
+  width: 356px;
+  height: 76px;
+  background-color: #c1111e;
+  color: #f4c95d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#rollDice:hover {
+  cursor: pointer;
+  background-color: #f4c95d;
+  color: #c1111e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* UTILITIES */
+
+.box-style {
+  border-radius: 12px;
+  border: 2px solid #000;
+}
+
+.text-lg {
+  font-family: "Press Start 2P", cursive;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 90px;
+  text-align: center;
+}
+
+.text-lg-px {
+  font-family: "Pixelify Sans", cursive;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 90px;
+  text-align: center;
+}
+
+.text-med {
+  font-family: "Pixelify Sans", cursive;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 79.65%;
+  text-align: center;
+}

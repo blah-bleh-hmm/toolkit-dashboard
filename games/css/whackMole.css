@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("bgs/lightBlueBg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#cream-rec {
+  background-color: #ffeed4;
+  height: 287px;
+  width: 1287px;
+  margin: 50px auto 63px auto;
+  padding: 53px 0 76px 0;
+  color: #023048;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.back-home-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-family: "Pixelify Sans", cursive;
+  font-size: 24px;
+  color: #023048;
+  text-decoration: none;
+  background-color: #659aba;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 2px solid #023048;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.back-home-btn:hover {
+  background-color: #f4c95d;
+  color: #c1111e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  background-color: #ffeed4;
+  height: 551px;
+  width: 1308px;
+  margin: 60px auto 0 auto;
+  border-radius: 12px;
+  border: 2px solid #000;
+  color: #023048;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.game {
+  width: 967px;
+  height: 550px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  width: 223px;
+  height: 163px;
+  background-image: url("bgs/whackMole/grass.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  position: relative;
+}
+
+.game img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.mole {
+  background-image: url("bgs/whackMole/mole.png");
+  background-size: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mole img {
+  display: none;
+}
+
+#score-section {
+  width: 271px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-self: flex-start;
+}
+
+/* utility classes */
+.box-style {
+  border-radius: 12px;
+  border: 2px solid #000;
+}
+
+.text-lg {
+  font-family: "Press Start 2P", cursive;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 90px;
+  text-align: center;
+}
+
+.text-med {
+  font-family: "Pixelify Sans", cursive;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 79.65%;
+  text-align: center;
+}
+
+.text-med2 {
+  font-family: "Pixelify Sans", cursive;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 79.65%;
+  text-align: center;
+}
+
+.text-small {
+  font-family: "Press Start 2P", cursive;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 80%;
+  text-align: center;
+}
+.text-lg-px {
+  font-family: "Pixelify Sans", cursive;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 79.65%;
+  text-align: center;
+}
